@@ -1,8 +1,10 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/Real-Estate/', // 👈 Set this to your repo name
-  plugins: [react()],
+  plugins: [tailwindcss(),react()],
+  
+  base: '/Real-Estate/', // Keep this if deploying to GitHub Pages under that repo
 });
+
