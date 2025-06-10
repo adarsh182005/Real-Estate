@@ -11,13 +11,15 @@ import Header from "./component/Header";
 const App = () => {
   return (
     <Router>
-      
+      <Navbar />
       <Routes>
         <Route path="/" element={<Header />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        {/* Optional: Handle unmatched routes */}
+        <Route path="*" element={<Header />} />
       </Routes>
       <Footer />
     </Router>
