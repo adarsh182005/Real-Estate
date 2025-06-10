@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import About from "./component/About";
@@ -18,7 +18,6 @@ const App = () => {
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        {/* Optional: Handle unmatched routes */}
         <Route path="*" element={<Header />} />
       </Routes>
       <Footer />
