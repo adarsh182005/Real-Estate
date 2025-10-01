@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [
-    tailwindcss(), // Tailwind CSS support
-    react(),       // React support
+    tailwindcss(),
+    react(),
   ],
-  base: '/Real-Estate/', // Required for GitHub Pages (matches repo name)
+  // The `base` property is removed for Vercel deployment
 });
