@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://[your-github-username].github.io/Real-Estate/", // Replace with your GitHub username
+  "homepage": "https://[your-github-username].github.io/Real-Estate/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build", // Generates the `dist` folder
-    "deploy": "gh-pages -d dist"   // Deploys `dist` to GitHub Pages
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
